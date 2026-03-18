@@ -1,3 +1,5 @@
 <Solution>
   <Project Path="LevelOne/LevelOne.csproj" />
+  <Project Path="LevelTwo/LevelTwo.csproj" />
+  <Project Path="SoGoodLib/SoGoodLib.csproj" />
 </Solution>
