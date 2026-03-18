@@ -13,10 +13,13 @@ namespace LevelOne
             Console.WriteLine("Hello LP!");
             PrintSomething("olá mundo!");
         }
-
+        /// <summary>
+        ///  print something
+        /// </summary>
+        /// <param name="phrase"></param>
         private static void PrintSomething(string phrase)
         {
-             Console.WriteLine(phrase);
+            Console.WriteLine(phrase);
         }
     }
 }
