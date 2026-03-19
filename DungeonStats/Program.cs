@@ -6,7 +6,12 @@ namespace DungeonStats
     {
         private static void Main(string[] args)
         {
+           int ataque =  int.Parse(args[0]);
+           int defensa = int.Parse(args[1]);
 
+           Console.WriteLine(Damage(ataque));
+           Console.WriteLine(Damage(ataque, defensa));
+           Console.WriteLine(CriticalHit(ataque));
         }
 
         private static int Damage(int attack, int defense)
@@ -33,7 +38,7 @@ namespace DungeonStats
             }
             else
             {
-                damage = 1 + Damage(damage);
+                damage = 1 + Damage(damage, Damage(damage));
             }
             return damage;
         }
