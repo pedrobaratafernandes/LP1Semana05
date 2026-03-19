@@ -11,11 +11,18 @@ namespace DungeonStats
 
         private static int Damage(int attack, int defense)
         {
-            return attack - defense;
+            if (defense >= 0)
+            {
+                return attack - defense;
+            }
+            else
+            {
+                return attack;
+            }
         }
         private static int Damage(int attack)
         {
-            return damage;
+            return attack;
         }
         private static int CriticalHit(int damage)
         {
@@ -30,5 +37,7 @@ namespace DungeonStats
             }
             return damage;
         }
+
+        
     }
 }
